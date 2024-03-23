@@ -4,34 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <title>Starbucks</title>
 </head>
 <body>
-        <main>
-            <div class="logo">
-                <img src="images/logo(1).png" alt="" class="logo">
-            </div>
+    <div class="fundo-imagem">
 
-            <div class="principal">
-                <h1 class="titulo">It's not just Coffee
-                    It's<span>Starbucks</span>
-                </h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi corrupti cupiditate neque ipsum consequatur! Earum quisquam officia dicta incidunt assumenda asperiores impedit accusantium, in animi nostrum molestias ex consequuntur molestiae. lorem</p>
-            </div>
-            <section><a id="botao" href="#">Peça já o seu</a></section>
+    </div>
 
-            <div class="fundo">
-                <img src="images/img1.png" alt="" class="fundoimagem">
-            </div>
-
-            <section class="rodape">
-                <a href=""><img src="images/img-pequena1.png" alt=""></a>
-
-                <a href=""><img src="images/img-pequena2.png" alt=""></a>
-            
-                <a href=""><img src="images/img-pequena3.png" alt=""></a>
-            </section>
-        </main>
+    <header class="caixa-logo">
+        <img src="images/logo(1).png" alt="Logo Starbucks" class="logo">
+    </header>
+    <main>
+        <h1>Não é apenas Café,<br> é um <span>Starbucks</span></h1><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic beatae excepturi nihil illum et assumenda dolor voluptas, dolore!</p>
+        <button><a href="#">Saiba Mais</a></button>
+            <div class="caixa-imagem"><img src="images/img1.png" alt="" class="img1"></div>
+    </main>
+    <footer>
+        <ul class="icones">
+            <li><a href=""><img src="images/img-pequena1.png" alt="" class="icones-embaixo verde"></a></li>
+            <li><a href=""><img src="images/img-pequena2.png" alt="" class="icones-embaixo rosa"></a></li>
+            <li><a href=""><img src="images/img-pequena3.png" alt="" class="icones-embaixo roxo"></a></li>
+        </ul>
+    </footer>
 </body>
+
+<script>
+    let FundoImagem = document.querySelector(".fundo-imagem")
+    let imgCopo = document.querySelector(".img1") 
+    let verde = document.querySelector(".verde")
+    let rosa = document.querySelector(".rosa")
+    let roxo = document.querySelector(".roxo")
+
+    verde.addEventListener("click", () => {
+        imgCopo.src = "../images/img1.png"
+        FundoImagem.style.background = "#017143"
+    })
+
+    rosa.addEventListener("click", () => {
+        imgCopo.src = "../images/img2.png"
+        FundoImagem.style.background = "#eb7495"
+    })
+
+    roxo.addEventListener("click", () => {
+        imgCopo.src = "../images/img3.png"
+        FundoImagem.style.background = "#d752b1"
+    })
+
+</script>
+
 </html>
