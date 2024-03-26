@@ -18,39 +18,43 @@
         <h1>Não é apenas Café,<br> é um <span>Starbucks</span></h1><br>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic beatae excepturi nihil illum et assumenda dolor voluptas, dolore!</p>
         <button><a href="#">Saiba Mais</a></button>
-            <div class="caixa-imagem"><img src="images/img1.png" alt="" class="img1"></div>
+        <div class="caixa-imagem">
+            <ul class="icones">
+                <li><a href=""><img src="images/img-pequena1.png" alt="" class="icones-embaixo verde"></a></li>
+                <li><a href=""><img src="images/img-pequena2.png" alt="" class="icones-embaixo rosa"></a></li>
+                <li><a href=""><img src="images/img-pequena3.png" alt="" class="icones-embaixo roxo"></a></li>
+            </ul>
+            <img src="images/img1.png" alt="" class="img1">
+        </div>
     </main>
     <footer>
         <ul class="icones">
             <li><a href=""><img src="images/img-pequena1.png" alt="" class="icones-embaixo verde"></a></li>
             <li><a href=""><img src="images/img-pequena2.png" alt="" class="icones-embaixo rosa"></a></li>
             <li><a href=""><img src="images/img-pequena3.png" alt="" class="icones-embaixo roxo"></a></li>
-        </ul>
+        </ul> 
     </footer>
 </body>
-
 <script>
-    let FundoImagem = document.querySelector(".fundo-imagem")
-    let imgCopo = document.querySelector(".img1") 
-    let verde = document.querySelector(".verde")
-    let rosa = document.querySelector(".rosa")
-    let roxo = document.querySelector(".roxo")
-
-    verde.addEventListener("click", () => {
-        imgCopo.src = "../images/img1.png"
-        FundoImagem.style.background = "#017143"
-    })
-
-    rosa.addEventListener("click", () => {
-        imgCopo.src = "../images/img2.png"
-        FundoImagem.style.background = "#eb7495"
-    })
-
-    roxo.addEventListener("click", () => {
-        imgCopo.src = "../images/img3.png"
-        FundoImagem.style.background = "#d752b1"
-    })
-
+        let FundoImagem = document.querySelector(".fundo-imagem")
+        let imgCopo = document.querySelector(".img1") 
+        let verde = document.querySelector(".verde")
+        let rosa = document.querySelector(".rosa")
+        let roxo = document.querySelector(".roxo")
+    
+        verde.addEventListener("click", () => {
+            imgCopo.src = "../images/img1.png"
+            FundoImagem.style.background = "#017143"
+        })
+    
+        rosa.addEventListener("click", () => {
+            imgCopo.src = "../images/img2.png"
+            FundoImagem.style.background = "#eb7495"
+        })
+    
+        roxo.addEventListener("click", () => {
+            imgCopo.src = "../images/img3.png"
+            FundoImagem.style.background = "#d752b1"
+        })
 </script>
-
 </html>

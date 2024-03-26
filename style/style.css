@@ -13,7 +13,7 @@
     display: flex;
     margin-left: 40px;
     margin-top: 10px;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -23,7 +23,7 @@
 /* MAIN */
 
 main {
-    height: 100%;
+    width: 300px;
     display: flex;
     flex-direction: column;
     margin-left: 40px;
@@ -32,7 +32,7 @@ main {
 
 main h1 {
     font-weight: 600;
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 
 main span {
@@ -42,7 +42,8 @@ main span {
 main p {
     text-indent: 15px;
     margin-bottom: 20px;
-    width: 450px ;
+    font-size: 13px;
+    width: 300px;
 }
 
 main button {
@@ -51,7 +52,7 @@ main button {
     border-radius: 20px;
     border: none;
     width: 150px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-right: 20px;
 }
 
@@ -68,38 +69,35 @@ main button a:hover {
 }
 
 .caixa-imagem {
-    background-color: #017143;
-    border-radius: 40%;
-    width: 400px;
+    width: 300px;
     display: flex;
+    justify-content: right;
 }
 
 
 .caixa-imagem .img1 {
-    width: 200px;
+    width: 170px;
     display: block;
-    position: absolute;
-    left: 90%; top: 70%;
-    transform: translate(-50%, -50%);
+
+}
+
+footer {
+    display: none;
 }
 
 .icones {
     list-style-type: none;
+    display: block;
     display: flex;
-    position: absolute;
-    left: 50%; top: 93%;
-    transform: translate(-50%, -50%);
-    gap: 12px;
-}
-
-.icones li {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+    width: 300px;
+    
 }
 
 .icones-embaixo {
-    width: 50px;
+    width: 40px;
     filter: drop-shadow(1px 1px 6px rgb(0, 0, 0,));
     transition: 1s;
 }
@@ -109,32 +107,31 @@ main button a:hover {
     transition: 1s;
 }
 
-.fundo-imagem {
+/* .fundo-imagem {
     background: #017143;
-    width: 99.8%;
+    width: 100%;
     height: 100%;
     position: absolute;
     left: 0; top: 0;
     clip-path: ellipse(24% 61% at 100% 85%);
-}
+} */
 
-@media screen and (max-width: 768px){ /* CELULAR */
+@media screen and (min-width: 768px){ /* TABLET */
 
     .fundo-imagem {
         background-color: #017143;
-        width: 80%;
+        width: 100%;
         height: 100%;
         position: absolute;
         left: 0; top: 0;
-        clip-path: ellipse(36% 30% at 0% 93%);
+        clip-path: ellipse(30% 60% at 100% 15%);
     }
-    
 
     .caixa-imagem .img1 {
         width: 170px;
         display: block;
         position: absolute;
-        left: 22%; top: 77%;
+        left: 80%; top: 50%;
         transform: translate(-50%, -50%);
     }
 
@@ -158,10 +155,11 @@ main button a:hover {
     .icones {
         list-style-type: none;
         display: block;
-        position: absolute;
-        left: 50%; top: 55%;
-        transform: translate(-50%, -50%);
-        margin-top: 120px;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        gap: 10px;
+        width: 300px;
     }
     
     .icones li {
@@ -174,7 +172,7 @@ main button a:hover {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+@media screen and (min-width: 992px) { /*   DESKTOP */
     
     .fundo-imagem {
         background-color: #017143;
@@ -217,6 +215,7 @@ main button a:hover {
     .icones {
         list-style-type: none;
         display: block;
+        display: flex;
         position: absolute;
         left: 45%; top:85%;
         transform: translate(-50%, -50%);
@@ -225,6 +224,7 @@ main button a:hover {
         justify-content: center;
         align-items: center;
         columns: 3;
+        gap: 20px;
     }
     
     .icones li {
